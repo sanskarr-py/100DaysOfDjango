@@ -22,3 +22,21 @@ python manage.py runserver
 ## Outcome
 
 Successfully created my first Django project and ran the development server.
+
+## Day 2
+
+### Topics Learned
+- Django Project vs App
+- Creating an app
+- URL routing
+- Views
+- HttpResponse
+
+### Commands Used
+
+python manage.py startapp home
+python manage.py runserver
+
+### Outcome
+
+Successfully created my first Django app and displayed a custom webpage.
