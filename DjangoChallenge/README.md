@@ -40,3 +40,48 @@ python manage.py runserver
 ### Outcome
 
 Successfully created my first Django app and displayed a custom webpage.
+
+# Day 3 - URLs and Views in Django
+
+## Topics Learned
+
+* What `urls.py` is and why it is used.
+* How URL routing works in Django.
+* What `views.py` is and its role in handling requests.
+* How a view processes a request and returns a response.
+* How the main `config/urls.py` delegates requests to the `home` app using `include()`.
+* Why each Django app should have its own `urls.py` file to keep the project organized.
+
+## Key Concepts
+
+### `config/urls.py`
+
+The main URL configuration for the entire Django project. It receives incoming requests and forwards them to the appropriate app.
+
+### `home/urls.py`
+
+Contains the URL patterns specific to the `home` app. This keeps each app independent and easier to maintain.
+
+### `views.py`
+
+A view is a Python function that receives an HTTP request, performs the required logic, and returns an HTTP response or renders an HTML template.
+
+### Request Flow
+
+```
+Browser
+   ↓
+config/urls.py
+   ↓
+home/urls.py
+   ↓
+views.py
+   ↓
+HTML Template / HttpResponse
+   ↓
+Browser
+```
+
+## Outcome
+
+Today I understood how Django routes requests from the main project to an app, how views handle those requests, and how URLs and views work together to display web pages.
