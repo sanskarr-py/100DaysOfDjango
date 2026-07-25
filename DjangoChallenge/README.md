@@ -187,8 +187,3 @@ Today I learned how Django renders HTML templates using the `render()` function.
 
 ---
 
-## 🚀 Git Commit
-
-```text
-Day 04 - Learned Django templates and page rendering
-```
