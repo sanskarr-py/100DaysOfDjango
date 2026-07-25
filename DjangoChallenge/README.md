@@ -85,3 +85,110 @@ Browser
 ## Outcome
 
 Today I understood how Django routes requests from the main project to an app, how views handle those requests, and how URLs and views work together to display web pages.
+
+
+# 📅 Day 4 - Django Templates
+
+## 🎯 Objective
+
+Learn how Django uses templates to display HTML pages and understand how `render()` connects views with templates.
+
+---
+
+## 📚 Topics Covered
+
+* What is a Django Template?
+* Difference between `render()` and `HttpResponse`
+* Template folder structure
+* Creating HTML templates
+* Rendering HTML pages using `render()`
+* Creating multiple pages (Home, About, Services, Contact)
+* Understanding the complete request flow in Django
+
+---
+
+## 🧠 Concepts Learned
+
+### What is a Django Template?
+
+A Django template is an HTML file that is used to display web pages. Instead of writing HTML inside Python code, Django separates the presentation layer into templates, making the project cleaner and easier to maintain.
+
+### Why use `render()` instead of `HttpResponse`?
+
+* `HttpResponse` returns plain text or HTML directly from Python.
+* `render()` loads an HTML template, combines it with data (if provided), and returns the final webpage.
+* `render()` is the standard way to build web pages in Django.
+
+### Template Folder Structure
+
+```text
+home/
+├── templates/
+│   └── home/
+│       ├── index.html
+│       ├── about.html
+│       ├── services.html
+│       └── contact.html
+```
+
+Keeping templates inside the application folder prevents filename conflicts and keeps the project organized.
+
+---
+
+## 🔄 Django Request Flow
+
+```text
+Browser
+   │
+   ▼
+config/urls.py
+   │
+   ▼
+home/urls.py
+   │
+   ▼
+views.py
+   │
+   ▼
+render()
+   │
+   ▼
+HTML Template
+   │
+   ▼
+Browser
+```
+
+---
+
+## 💻 Practical Work
+
+* Created `index.html`
+* Created `about.html`
+* Created `services.html`
+* Created `contact.html`
+* Used `render()` to display HTML pages.
+* Connected URLs with their corresponding views.
+* Navigated between pages using a simple navigation bar.
+
+---
+
+## 📝 Commands Used
+
+```bash
+python manage.py runserver
+```
+
+---
+
+## 🎓 Outcome
+
+Today I learned how Django renders HTML templates using the `render()` function. I understood the relationship between URLs, views, and templates, and created multiple pages for my Django project using proper template organization.
+
+---
+
+## 🚀 Git Commit
+
+```text
+Day 04 - Learned Django templates and page rendering
+```
