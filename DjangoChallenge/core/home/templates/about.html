@@ -61,6 +61,11 @@ This project is part of my <strong>100 Days of Django Challenge</strong>.
 My goal is to learn Django from the basics to advanced concepts by building projects every day and sharing my progress on GitHub.
 </p>
 
+<ul>
+{% for skill in skills %}
+    <li>{{ skill }}</li>
+{% endfor %}
+</ul>
 </div>
 
 </body>

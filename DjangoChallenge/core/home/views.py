@@ -3,9 +3,18 @@ from django.shortcuts import render
 # Create your views here.
 
 def home(request):
-    return render(request, 'index.html')
+    context = {
+        "name": "Sanskar Acharya",
+        "description": "Learning Django one day at a time and documenting everything on GitHub.",
+        "button": "Explore"
+    }
+    
+    return render(request, 'index.html', context)
 
 def about(request):
+    context ={
+        "skills": ["Python", "Django", "HTML", "CSS", "C", "C++"],
+    }
     return render(request, 'about.html')
 
 def services(request):
