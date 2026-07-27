@@ -15,7 +15,7 @@ def about(request):
     context ={
         "skills": ["Python", "Django", "HTML", "CSS", "C", "C++"],
     }
-    return render(request, 'about.html')
+    return render(request, 'about.html', context)
 
 def services(request):
     return render(request, 'services.html')

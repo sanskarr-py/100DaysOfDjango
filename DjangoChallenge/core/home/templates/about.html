@@ -57,15 +57,39 @@
 <h1>About This Project</h1>
 
 <p>
-This project is part of my <strong>100 Days of Django Challenge</strong>.
-My goal is to learn Django from the basics to advanced concepts by building projects every day and sharing my progress on GitHub.
+    Welcome to my <strong>100 Days of Django Challenge</strong>! 🚀
 </p>
 
+<p>
+    This project is a personal learning journey where I explore Django from the
+    fundamentals to advanced concepts. Every day, I learn something new, build
+    practical features, solve problems, and document my progress by uploading my
+    work to GitHub.
+</p>
+
+<p>
+    My goal is to strengthen my backend development skills, understand how Django
+    works internally, and build real-world web applications with clean and
+    maintainable code.
+</p>
+
+<h2>📚 Skills Learned</h2>
+
 <ul>
-{% for skill in skills %}
-    <li>{{ skill }}</li>
-{% endfor %}
+    {% for skill in skills %}
+        <li>{{ skill }}</li>
+    {% empty %}
+        <li>No skills have been added yet.</li>
+    {% endfor %}
 </ul>
+
+<h2>🎯 Challenge Goal</h2>
+
+<p>
+    Complete 100 consecutive days of Django practice while improving my Python,
+    web development, problem-solving, Git, and GitHub skills through consistent
+    learning and hands-on projects.
+</p>
 </div>
 
 </body>
