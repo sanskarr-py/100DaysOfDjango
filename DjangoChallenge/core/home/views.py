@@ -6,7 +6,10 @@ def home(request):
     context = {
         "name": "Sanskar Acharya",
         "description": "Learning Django one day at a time and documenting everything on GitHub.",
-        "button": "Explore"
+        "button": "Explore",
+        "year": 2026,
+        "author": "Sanskar Acharya",
+        "challenge": "100 Days of Django"
     }
     
     return render(request, 'index.html', context)
